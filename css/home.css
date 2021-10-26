@@ -216,7 +216,7 @@ img {
 }
 
 .video-area {
-  float: right;
+  left: 48%;
   top: -400px;
   position: relative;
   margin: 30px;
@@ -257,7 +257,8 @@ img {
 /* section - theme */
 .theme {
   display: flex;
-  background: linear-gradient(#fff 35%, #f7f7f9 35% 75%, #fff 75%);
+  margin-top: 60px;
+  background-image: linear-gradient(rgb(247, 247, 249) 22.5vw, white 1px, white);
 }
 
 .theme-wrap {
@@ -287,6 +288,16 @@ img {
 
 .txt-area-t {
   margin: 100px;
+}
+
+.txt-area-t .m-info {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.txt-area-t .s-info {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 
@@ -508,10 +519,12 @@ img {
   width: 15%;
   height: 100%;
   border-radius: 100%;
-  background-color: #f7f7f9;
 }
 
 .card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 20px;
 }
 
