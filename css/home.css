@@ -509,6 +509,7 @@ img {
 
 .card-info.r {
   width: calc((92vw - 160px) / 3);
+  height: 12%;
   margin-top: 10px;
   position: relative;
   display: flex;
