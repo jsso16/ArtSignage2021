@@ -83,7 +83,6 @@ var Sakura = function Sakura(selector, options) {
 
   function elementInViewport(el) {
     var rect = el.getBoundingClientRect();
-    // console.log(rect);
     return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
   }
 
@@ -103,7 +102,7 @@ var Sakura = function Sakura(selector, options) {
     var blowAnimation = randomArrayElem(animationNames.blowAnimations);
     var swayAnimation = randomArrayElem(animationNames.swayAnimations);
 
-    var fallTime = (document.documentElement.clientHeight * 0.007 + Math.round(Math.random() * 5)) * _this.settings.fallSpeed; // Create animations
+    var fallTime = (document.documentElement.scrollHeight * 0.007 + Math.round(Math.random() * 5)) * _this.settings.fallSpeed; // Create animations
 
 
     var animationsArr = ["fall ".concat(fallTime, "s linear 0s 1"), "".concat(blowAnimation, " ").concat((fallTime > 30 ? fallTime : 30) - 20 + randomInt(0, 20), "s linear 0s infinite"), "".concat(swayAnimation, " ").concat(randomInt(2, 4), "s linear 0s infinite")];
