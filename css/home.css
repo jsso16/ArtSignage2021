@@ -611,3 +611,205 @@ img {
   font-size: 18px;
   color: #000000;
 }
+
+
+
+
+/* Text Animation - main */  
+.sub-title1 {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: right;
+}
+
+.title {
+  animation-fill-mode: both;
+  animation-duration: 1260ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: right;
+}
+
+.sub-title2 {
+  animation-fill-mode: both;
+  animation-duration: 1587ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: right;
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  } 
+}
+
+
+
+
+/* Text Animation - best */  
+.bubbles {
+  display: inline-block;
+  font-family: arial,'Luckiest Guy', cursive;
+  z-index: 2;
+}
+  
+.individual-bubble {
+  position: absolute;
+  border-radius: 100%;
+  bottom: 10px;
+  background-color: #3498db;
+  z-index: 1;
+}
+
+
+
+/* Text Animation - sale */  
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+/* Text Animation - rising */  
+.arts.r h1 {
+  color: #f78ed0;
+}
+
+.move {
+  display: block;
+	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+  /* Clip Background Image */
+	background: url(../img/background.jpg) repeat-y;
+	-webkit-background-clip: text;
+	background-clip: text;
+
+  /* Animate Background Image */
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: aitf 20s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+  }
+
+  /* Animate Background Image */
+  @-webkit-keyframes aitf {
+  	0% { background-position: 0% 50%; }
+  	100% { background-position: 100% 50%; }
+}
+
+
+
+/* Text Animation - recommend */
+.blends {
+  overflow: hidden;
+  transform: translate(0.4vw, 0.3vh);
+  mix-blend-mode: darken;
+  width: 100%;
+  text-shadow: 1px 0px 0px #999, 0px 1px 0px #8C8C8C, 2px 1px 0px #999, 1px 2px 0px #8C8C8C, 3px 2px 0px #999, 2px 3px 0px #8C8C8C, 4px 3px 0px #999, 3px 4px 0px #8C8C8C, 5px 4px 0px #999, 4px 5px 0px #8C8C8C, 6px 5px 0px #999, 5px 6px 0px #8C8C8C, 7px 6px 0px #8C8C8C;
+}
+
+
+/* Text Animation - preview */  
+.reveal {
+  transform: translateY(100%);
+  animation: reveal 1.7s cubic-bezier(1, 0, 0.3, 0.9) forwards;
+}
+
+@keyframes reveal {
+  from{
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+  
+
+/* Text Animation - artworks */
+.txt-area-t {
+  position: relative;
+}
+
+.liquid {
+  position: absolute;
+}
+
+.liquid:nth-child(1) {
+  color: #000;
+}
+
+.liquid:nth-child(2) {
+  color: #2196f3;
+  animation: wave 3s ease-in-out infinite;
+}
+
+.liquid:nth-child(3) {
+  color: #2196f3;
+  opacity: 0.5;
+  animation: wave 6s ease-in-out infinite;
+}
+
+.liquid:nth-child(4) {
+  color: #2196f3;
+  animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 
+  100% {
+    clip-path: polygon(
+      0 44%,
+      21% 43%,
+      39% 49%,
+      53% 55%,
+      68% 61%,
+      85% 59%,
+      100% 49%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 60%,
+      19% 68%,
+      36% 72%,
+      53% 66%,
+      68% 52%,
+      82% 39%,
+      100% 42%,
+      100% 100%,
+      0% 100%
+    );
+  }
+} 
