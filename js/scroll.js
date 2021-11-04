@@ -13,6 +13,22 @@ $(document).ready(function() {
   }
   // If element is scrolled into view, Animation it in
   $(window).scroll(function() {
+    $('.animated-2').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('reveal');
+      }
+    });
+  });
+
+  $(window).scroll(function() {
+    $('.animated-3').each(function() {
+      if (isScrolledIntoView(this) === true) {
+        $(this).addClass('wave');
+      }
+    });
+  });
+
+  $(window).scroll(function() {
     $('.animated-5').each(function() {
       if (isScrolledIntoView(this) === true) {
         $(this).addClass('typing-demo');
@@ -29,9 +45,9 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-    $('.animated-2').each(function() {
+    $('.animated-7').each(function() {
       if (isScrolledIntoView(this) === true) {
-        $(this).addClass('reveal');
+        $(this).addClass('shadow');
       }
     });
   });

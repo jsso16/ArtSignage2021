@@ -677,11 +677,10 @@ img {
 /* Text Animation - sale */  
 .typing-demo {
   width: 20ch;
-  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(32), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
-  font-family: monospace;
 }
 
 @keyframes typing {
@@ -692,7 +691,7 @@ img {
     
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -714,29 +713,23 @@ img {
 
   /* Animate Background Image */
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: aitf 20s linear infinite;
+	animation: aitf 20s linear infinite;
 
   /* Activate hardware acceleration for smoother animations */
-	-webkit-transform: translate3d(0,0,0);
-	-webkit-backface-visibility: hidden;
+	transform: translate3d(0,0,0);
+	backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@keyframes aitf {
+	0% { 
+    background-position: 0% 50%; 
   }
+	100% { 
+    background-position: 100% 50%; 
+  }
+} 
 
-  /* Animate Background Image */
-  @-webkit-keyframes aitf {
-  	0% { background-position: 0% 50%; }
-  	100% { background-position: 100% 50%; }
-}
-
-
-
-/* Text Animation - recommend */
-.blends {
-  overflow: hidden;
-  transform: translate(0.4vw, 0.3vh);
-  mix-blend-mode: darken;
-  width: 100%;
-  text-shadow: 1px 0px 0px #999, 0px 1px 0px #8C8C8C, 2px 1px 0px #999, 1px 2px 0px #8C8C8C, 3px 2px 0px #999, 2px 3px 0px #8C8C8C, 4px 3px 0px #999, 3px 4px 0px #8C8C8C, 5px 4px 0px #999, 4px 5px 0px #8C8C8C, 6px 5px 0px #999, 5px 6px 0px #8C8C8C, 7px 6px 0px #8C8C8C;
-}
 
 
 /* Text Animation - preview */  
@@ -746,7 +739,7 @@ img {
 }
 
 @keyframes reveal {
-  from{
+  from {
     transform: translateY(100%);
   }
   to {
@@ -755,61 +748,98 @@ img {
 }
   
 
+
 /* Text Animation - artworks */
 .txt-area-t {
+  display: block;
   position: relative;
+  width: 55%;
 }
 
-.liquid {
+.txt-area-t .wave {
+  position: relative;
+  color: #325673;
+}
+
+.wave:before {
+  content: "OIL PAINTING ARTWORKS \A FOR YOU";
   position: absolute;
-}
-
-.liquid:nth-child(1) {
-  color: #000;
-}
-
-.liquid:nth-child(2) {
-  color: #2196f3;
+  color: #6CB7F4;
+  white-space: pre-wrap;
   animation: wave 3s ease-in-out infinite;
 }
 
-.liquid:nth-child(3) {
-  color: #2196f3;
-  opacity: 0.5;
-  animation: wave 6s ease-in-out infinite;
-}
-
-.liquid:nth-child(4) {
-  color: #2196f3;
-  animation: wave 4s ease-in-out infinite;
-}
-
 @keyframes wave {
-  0%, 
-  100% {
+  0%, 100% {
     clip-path: polygon(
-      0 44%,
-      21% 43%,
-      39% 49%,
-      53% 55%,
-      68% 61%,
-      85% 59%,
-      100% 49%,
-      100% 100%,
+      0 42%, 
+      13% 48%, 
+      26% 55%, 
+      41% 64%, 
+      56% 65%, 
+      69% 58%, 
+      84% 45%, 
+      100% 38%, 
+      100% 100%, 
       0% 100%
     );
   }
   50% {
     clip-path: polygon(
-      0 60%,
-      19% 68%,
-      36% 72%,
-      53% 66%,
-      68% 52%,
-      82% 39%,
-      100% 42%,
-      100% 100%,
+      0 63%, 
+      14% 57%, 
+      25% 50%, 
+      40% 42%, 
+      56% 40%, 
+      71% 44%, 
+      84% 50%, 
+      100% 60%, 
+      100% 100%, 
       0% 100%
     );
   }
-} 
+}
+
+.txt-area-t .s-info {
+  margin-top: 40%;
+}
+
+
+
+/* Text Animation - recommend */
+.shadow {
+  position: relative;
+  text-shadow: .04em .04em 0 rgb(153, 153, 153);
+  z-index: 10;
+}
+
+.shadow:after {
+  content: "Recommended artworks in \A September";
+  position: absolute;
+  /* white-space: pre-wrap; */
+  white-space: pre;
+  top: .08em; left: .08em;
+  z-index: -1;
+  text-shadow: none;
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 45%,
+      rgb(0, 0, 0) 45%,
+      rgb(0, 0, 0) 55%,
+      transparent 0
+      );
+  background-size: .05em .05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shad-anim 75s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0
+  }
+  0% {
+    background-position: 100% -100%
+  }
+}
