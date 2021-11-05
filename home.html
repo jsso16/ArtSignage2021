@@ -19,7 +19,8 @@
         <div class="header-wrap">
           <ul class="menu-list">
             <li class="menu">
-              <img src="../img/ic_logo_white.png" alt="Artprime Club">
+              <img class="white" src="../img/ic_logo_white.png" alt="Artprime Club">
+              <img class="black" src="../img/ic_logo_black.png" alt="Artprime Club">
             </li>
             <li class="menu">
               <span>Artworks</span>
@@ -291,7 +292,7 @@
         <section class="artists">
           <div class="artist-wrap">
             <div class="txt-area-ar">
-              <h1 class="animated-7">Recommended artworks in<br>September</h1>
+              <h1 class="animated-7">Recommended artworks in <br> September</h1>
               <span class="s-txt">Feel sentimental artists in September</span>
             </div>
             <div class="artist-list">
@@ -395,6 +396,15 @@
       maxSize: 14,
       minSize: 10
     });
+  </script>
+  <script> 
+    $(window).on('scroll',function() { 
+      if ($(window).scrollTop()) { 
+        $('.header').addClass('active'); 
+      } else { 
+        $('.header').removeClass('active'); 
+      } 
+    }); 
   </script>
 </body>
 </html>
