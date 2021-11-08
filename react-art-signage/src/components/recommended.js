@@ -1,3 +1,5 @@
+import '../styles/recommended.css'
+
 function Recommended() {
   
   return (

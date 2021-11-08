@@ -1,3 +1,5 @@
+import '../styles/rising.css'
+
 function Rising() {
   
   return (

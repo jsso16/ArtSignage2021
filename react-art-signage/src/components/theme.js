@@ -1,3 +1,5 @@
+import '../styles/theme.css'
+
 function Theme() {
   
   return (

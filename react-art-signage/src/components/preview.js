@@ -1,3 +1,5 @@
+import '../styles/preview.css'
+
 function Preview() { 
   
   return (

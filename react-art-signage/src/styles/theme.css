@@ -1,0 +1,45 @@
+/* section - theme */
+.theme {
+  display: flex;
+  margin-top: 60px;
+  background-image: linear-gradient(rgb(247, 247, 249) 22.5vw, white 1px, white);
+}
+
+.theme-wrap {
+  display: flex;
+  padding: 0px 60px;
+  margin-bottom: 60px;
+  width: calc(100% - 120px);
+  height: 100%;
+}
+
+.card-theme {
+  width: 30vw;
+  height: 30vw;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(207, 217, 223);
+}
+
+.card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.txt-area-t {
+  margin: 100px;
+}
+
+.txt-area-t .m-info {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.txt-area-t .s-info {
+  font-size: 20px;
+  font-weight: 500;
+}

@@ -1,0 +1,85 @@
+/* section - arts(best) */
+.arts {
+  padding: 100px 0px;
+  background-image: linear-gradient(rgb(247, 247, 249) 22.5vw, white 1px, white);
+}
+
+.art-wrap {
+  padding: 0px 60px;
+  width: calc(100% - 120px);
+  height: 100%;
+}
+
+.txt-area-a {
+  position: absolute;
+}
+
+.art-wrap h1 {
+  font-family: S-CoreDream-6;
+  font-weight: 600;
+  font-size: 70px;
+}
+
+.art-wrap span {
+  display: block;
+  line-height: 1.67;
+  font-family: S-CoreDream-5;
+  font-size: 20px;
+  color: #000000;
+}
+
+.art-wrap .s-txt {
+  color: #9b9b9b;
+}
+
+.bests {
+  padding: 0px 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, calc((100vw - 345px) / 6));
+  grid-template-areas:
+    ". . . best1 best1 best2"
+    "best3 best4 best5 best1 best1 best6";
+  gap: 25px;
+}
+
+.best1 {
+  grid-area: best1 / best1 / best1 / best1;
+}
+
+.card-art {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(207, 217, 223);
+  border-radius: 5px;
+}
+
+.card-art img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.best2 {
+  grid-area: best2 / best2 / best2 / best2;
+}
+
+.best3 {
+  grid-area: best3 / best3 / best3 / best3;
+}
+
+.best4 {
+  grid-area: best4 / best4 / best4 / best4;
+}
+
+.best5 {
+  grid-area: best5 / best5 / best5 / best5;
+}
+
+.best6 {
+  grid-area: best6 / best6 / best6 / best6;
+}

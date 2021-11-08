@@ -1,3 +1,5 @@
+import '../styles/best.css'
+
 function Best() {
   
   return (

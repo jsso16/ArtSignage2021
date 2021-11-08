@@ -1,0 +1,92 @@
+/* section - preview */
+.preview {
+  position:  relative;
+  height: 643px;
+  background-color: #000;
+}
+
+.preview-wrap {
+  padding: 70px 30px 0px 60px;
+}
+
+.text-area {
+  color: #fff;
+}
+
+.title-p {
+  font-family: S-CoreDream-6;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.txt-p .cursor {
+  font-family: S-CoreDream-5;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.txt-p:first-child {
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.display-info {
+  display: flex;
+  padding-top: 89px;
+}
+
+.display-desc {
+  padding: 15px 33px;
+}
+
+.display-desc .desc-t {
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+.display-desc .desc-st {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.display-desc span {
+  display: block;
+}
+
+.video-area {
+  left: 48%;
+  top: -400px;
+  position: relative;
+  margin: 30px;
+  height: 350px;
+  width: 800px;
+  max-width: calc(55vw - 150px);
+  background-color: rgb(76, 51, 101);
+}
+
+.video {
+  position: absolute;
+  max-width: 50vw;
+  top: 30px;
+  right: 30px;
+  min-height: 100%;
+  max-height: 550px;
+}
+
+.preview-deco {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.page-shape {
+  float: left;
+  border-top: 60px solid rgb(186, 104, 200);
+  border-left: 60px solid rgb(255, 255, 255);
+}
+
+.click {
+  float: left;
+  padding: 15px;
+}

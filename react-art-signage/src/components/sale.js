@@ -1,3 +1,5 @@
+import '../styles/sale.css'
+
 function Sale() {
   
   return (

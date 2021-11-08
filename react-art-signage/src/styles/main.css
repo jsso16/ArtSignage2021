@@ -1,0 +1,82 @@
+/* section - main(canvas) */
+.canvas-demo {
+  position: absolute;
+  top: 15%;
+  right: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgb(51 51 51) 3px 3px 10px;
+}
+
+.fit {
+  width: 16vw; 
+  height: 16vw; 
+  box-shadow: rgb(51, 51, 51) -10px 10px 20px;
+}
+
+.canvas-wrap {
+  position: relative;
+  display: flex;
+  margin: 3px;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  overflow: hidden;
+  background-color: rgb(51, 51, 51);
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas.fit img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* section - main */
+.main {
+  position: relative;
+  background-image: url(../img/bg_main.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  min-height: 48vw;
+  max-height: 69vw;
+}
+
+.main-wrap {
+  padding: 0px 60px;
+  height: 100%;
+}
+
+.text-wrap {
+  color: #fff;
+  padding: calc((56vw - 30%) - 120px) 0px;
+  width: calc((84vw - 30%) - 120px);
+}
+
+.sub-title1 {
+  font-family: S-CoreDream-5;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: S-CoreDream-6;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+.sub-title2 {
+  font-family: S-CoreDream-4;
+  font-size: 16px;
+  line-height: 1.67;
+}
