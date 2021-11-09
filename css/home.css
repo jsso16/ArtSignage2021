@@ -143,6 +143,7 @@ img {
 }
 
 
+
 /* section - main */
 .main {
   position: relative;
@@ -568,6 +569,8 @@ img {
   font-size: 16px;
 }
 
+
+
 /* section - artists */
 .artists {
   padding: 50px 0px;
@@ -646,6 +649,7 @@ img {
 
 /* Text Animation - main */  
 .sub-title1 {
+  display: block;
   animation-fill-mode: both;
   animation-duration: 1000ms;
   animation-delay: 0ms;
@@ -664,6 +668,7 @@ img {
 }
 
 .sub-title2 {
+  display: block;
   animation-fill-mode: both;
   animation-duration: 1587ms;
   animation-delay: 0ms;
