@@ -1,9 +1,35 @@
+import React, { useState, useEffect, useRef } from 'react'
 import '../styles/header.css'
 
 function Header() {
-  
+  const [top, setTop] = useState(true);
+  const headerElement = useRef(null);
+
+  const listener = e => {
+    if(window.pageYOffset > 0) {
+      setTop(false);
+    } else {
+      setTop(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listener);
+    return () => {
+      window.removeEventListener("scroll", listener);
+    };
+  }, []);
+
+  useEffect(() => {
+    if(top) {
+      headerElement.current.classList.remove("active");
+    } else {
+      headerElement.current.classList.add("active");
+    }
+  }, [top])
+
   return (
-    <header className="header">
+    <header className="header" ref={headerElement}>
       <div className="header-wrap">
         <ul className="menu-list">
           <li className="menu">
