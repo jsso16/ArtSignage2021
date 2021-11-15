@@ -1,12 +1,13 @@
 import '../styles/preview.css'
+import React, { forwardRef } from 'react'
 
-function Preview() { 
-  
+const Preview = forwardRef((props, ref) => { 
+
   return (
     <section className="preview">
       <div className="preview-wrap">
         <div className="text-area">
-          <h1 className="title-p animated-2">Preview</h1>
+          <h1 className="title-p animated-2" ref={ref}>Preview</h1>
           <ul className="text-list animated-2">
             <li className="txt-p">
               <span className="cursor selected">26.5" DISPLAY</span>
@@ -40,6 +41,6 @@ function Preview() {
       </div>
     </section>
   )
-}
+});
 
 export default Preview

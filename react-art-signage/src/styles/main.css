@@ -80,3 +80,46 @@
   font-size: 16px;
   line-height: 1.67;
 }
+
+
+
+/* Text Animation - main */  
+.sub-title1 {
+  display: block;
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: right;
+}
+
+.title {
+  animation-fill-mode: both;
+  animation-duration: 1260ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: right;
+}
+
+.sub-title2 {
+  display: block;
+  animation-fill-mode: both;
+  animation-duration: 1587ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: right;
+}
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  } 
+}
